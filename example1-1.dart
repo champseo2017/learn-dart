@@ -1,7 +1,14 @@
-import 'dart:io';
+import 'package:intl/intl.dart';
+
+/* 
+การจัดรูปแบบตัวเลข
+
+*/
 
 void main() {
-  int e = 100;
-  e += e++;
-  print(e);
+  var fmt = NumberFormat();
+  int num = 1234567;
+  print(fmt.format(num));
+  print(fmt.format(9876654.321));
+  print(fmt.format(-1081009));
 }
